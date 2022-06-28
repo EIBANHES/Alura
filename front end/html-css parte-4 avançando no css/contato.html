@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Produtos - Barbearia Alura</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="caixa">
+      <h1><img src="img/logo.png" alt="logo" /></h1>
+      <nav>
+        <ul>
+          <a href="index.html">
+            <li>Home</li>
+          </a>
+          <a href="produtos.html">
+            <li>Produtos</li>
+          </a>
+          <a href="contato.html">
+            <li>contato</li>
+          </a>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <form>
+      <label for="nomesobrenome">Nome e sobrenome</label>
+      <input type="text" id="nomesobrenome" class="input-padrao" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" class="input-padrao" placeholder="seuemail@dominio.com" required />
+
+      <label for="telefone">Telefone</label>
+      <input type="tel" id="telefone" class="input-padrao" placeholder="(XX) XXXXX-XXXX" required />
+
+      <label for="mensagem">Mensagem</label>
+      <textarea name="" id="mensagem" cols="30" rows="10" class="input-padrao" required></textarea>
+
+      <fieldset>
+        <legend>Como prefere nosso contato?</legend>
+        <label for="radio-email"><input type="radio" value="email" name="contato" id="radio-email" checked />
+          Email</label>
+
+        <label for="radio-telefone"><input type="radio" value="telefone" name="contato"
+            id="radio-telefone" />Tefefone</label>
+
+
+        <label for="radio-whatsapp"><input type="radio" value="whatsapp" name="contato"
+            id="radio-whatsapp" />Whatsapp</label>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Qual horario prefere ser atendido?</legend>
+        <select name="" id="">
+          <option value="">Manhã</option>
+          <option value="">Tarde</option>
+          <option value="">Noite</option>
+        </select>
+      </fieldset>
+
+      <label class="checkbox">
+        <input type="checkbox" checked />Gostaria de receber nossas novidades por
+        email?
+      </label>
+      <input type="submit" value="Enviar formulário" class="enviar" />
+    </form>
+
+    <!--A criar uma tabela HTML
+        A tag table, que representa a tabela
+        A tag tr, que representa a linha da tabela
+        A tag td, que representa a célula da tabela
+        A tag thead, que representa o cabeçalho da tabela
+        A tag tbody, que representa o corpo da tabela
+        A tag th, que representa a célula do cabeçalho da tabela
+        A tag tfoot, que representa o rodapé da tabela
+        A estilizar a tabela -->
+
+    <table>
+      <thead>
+        <tr>
+          <th>Dia</th>
+          <th>horario</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>segunda</td>
+          <td>dia inteiro</td>
+        </tr>
+        <tr>
+          <td>quarta</td>
+          <td>dia inteiro</td>
+        </tr>
+        <tr>
+          <td>sexta</td>
+          <td>dia inteiro</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </main>
+  <footer>
+    <img src="img/logo-branco.png" alt="logo footer" />
+    <p>&copy Barbearia Alura - 2022</p>
+  </footer>
+</body>
+
+</html>
